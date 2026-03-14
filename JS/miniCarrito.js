@@ -26,7 +26,7 @@ function initMiniCart() {
                         <span>Total:</span>
                         <span id="mini-cart-total-price">$0</span>
                     </div>
-                    <a href="CarritoGrande.html" class="btn-checkout">Tu Carrito</a>
+                    <a href="Html/CarritoGrande.html" class="btn-checkout">Tu Carrito</a>
                 </div>
             </div>
         `;

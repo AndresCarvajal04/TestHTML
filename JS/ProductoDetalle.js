@@ -8,7 +8,7 @@ fetch('../Json/Productos.Json')
     .catch(error => console.error('Error cargando el JSON:', error));
 
 function mostrarProducto(id) {
-    window.open(`producto.html?id=${id}`, '_self');  
+    window.open(`Html/producto.html?id=${id}`, '_self');  
 }
 
 const urlParams = new URLSearchParams(window.location.search);

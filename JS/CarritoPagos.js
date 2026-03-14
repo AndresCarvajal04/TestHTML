@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 // Limpiar carrito tras compra exitosa
                 CartUtils.save('fashion_cart', []);
-                window.location.href = 'CompraExitosa.html';
+                window.location.href = 'Html/CompraExitosa.html';
             }
         });
     }

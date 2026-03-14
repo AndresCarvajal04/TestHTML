@@ -27,6 +27,6 @@ document.getElementById("formRegistro").addEventListener("submit", function (e) 
   alert("Registro exitoso");
 
   
-  window.location.href = "Login.html";
+  window.location.href = "Html/Login.html";
 });
                  

@@ -71,6 +71,6 @@ if (payBtn) {
         // For now, show a confirmation and clear cart
         alert(`Gracias ${nombre}. Pedido confirmado. Total: ${formatMoney(total)}`);
         CartUtils.clear(CART_KEY);
-        window.location.href = 'CompraExitosa.html';
+        window.location.href = 'Html/CompraExitosa.html';
     });
 }

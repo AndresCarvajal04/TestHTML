@@ -17,7 +17,7 @@ document.getElementById("formLogin").addEventListener("submit", function (e) {
   ) {
     alert("Bienvenido " + usuarioGuardado.nombre);
     localStorage.setItem("sesionActiva", "true");
-    window.location.href = "index.html";
+    window.location.href = "../index.html";
   } else {
     alert("Usuario o contraseña incorrectos");
   }
