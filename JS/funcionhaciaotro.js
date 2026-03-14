@@ -6,7 +6,7 @@ function cargarProductos() {
         productos = JSON.parse(local);
         mostrarAdmin();
     } else {
-        fetch('../Json/Productos.Json')
+        fetch('../Json/productos.json')
         .then(r => r.json())
         .then(data => {
             productos = data;
