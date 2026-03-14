@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FASHIONSTYLE - Home</title>
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/miniCarrito.css">
+</head>
+<body>
+
+<div id="id1"></div>
+
+<header>
+    <img src="../assets/logo.pp.png" alt="Logo" class="logo">
+    <div class="search-container">
+        <input id="int-buscar" type="search" placeholder="Buscar">
+        <button class="btn-buscar">Buscar</button>
+    </div>
+    <div class="auth-buttons">
+        <a href="Login.html" class="btn-login">Iniciar Sesión</a>
+        <a href="Registro.html" class="btn-register">Registrarse</a>
+        <a href="CarritoPagos.html" class="btn-carrito">🛒</a>
+        <a href="Admin.html" class="btn-admin">Admin</a>
+    </div>
+</header>
+
+<main>
+    <h2 class="titulo-seccion">NUESTRA COLECCIÓN</h2>
+
+    <section class="galeria">
+        <div class="tarjeta" onclick="mostrarProducto(1)">
+            <div class="img-box"><img src="../assets/img1.jpg" alt="Estilo Urbano"></div>
+            <div class="btn-cart"><button class="add-to-cart" data-id="1" onclick="event.stopPropagation()">Agregar Al Carrito</button></div>
+            <div class="name">Estilo Urbano <br> $199.900</div>
+        </div>
+
+        <div class="tarjeta" onclick="mostrarProducto(2)">
+            <div class="img-box"><img src="../assets/img2.jpg" alt="R10 - Classic"></div>
+            <div class="btn-cart"><button class="add-to-cart" data-id="2" onclick="event.stopPropagation()">Agregar Al Carrito</button></div>
+            <div class="name">R10 - Classic <br> $199.900</div>
+        </div>
+
+        <div class="tarjeta" onclick="mostrarProducto(3)">
+            <div class="img-box"><img src="../assets/img3.jpg" alt="LM10 - Modern"></div>
+            <div class="btn-cart"><button class="add-to-cart" data-id="3" onclick="event.stopPropagation()">Agregar Al Carrito</button></div>
+            <div class="name">LM10 - Modern <br> $199.900</div>
+        </div>
+
+        <div class="tarjeta" onclick="mostrarProducto(4)">
+            <div class="img-box"><img src="../assets/img4.jpg" alt="NJR - Street"></div>
+            <div class="btn-cart"><button class="add-to-cart" data-id="4" onclick="event.stopPropagation()">Agregar Al Carrito</button></div>
+            <div class="name">NJR - Street <br> $199.900</div>
+        </div>
+
+        <div class="tarjeta" onclick="mostrarProducto(5)">
+            <div class="img-box"><img src="../assets/img5.jpg" alt="KM7 - Speed"></div>
+            <div class="btn-cart"><button class="add-to-cart" data-id="5" onclick="event.stopPropagation()">Agregar Al Carrito</button></div>
+            <div class="name">KM7 - Speed <br> $199.900</div>
+        </div>
+
+        <div class="tarjeta" onclick="mostrarProducto(6)">
+            <div class="img-box"><img src="../assets/img6.jpg" alt="KM7 - Gold"></div>
+            <div class="btn-cart"><button class="add-to-cart" data-id="6" onclick="event.stopPropagation()">Agregar Al Carrito</button></div>
+            <div class="name">KM7 - Gold <br> $199.900</div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <a href="mailto:T-ZUN.MODA@GMAIL.COM">FASHIONSTYLE@GMAIL.COM</a>
+</footer>
+
+<script src="../JS/cartStorage.js"></script>
+<script src="../JS/miniCarrito.js"></script>
+<script src="../JS/ProductoDetalle.js"></script>
+
+</body>
+</html>

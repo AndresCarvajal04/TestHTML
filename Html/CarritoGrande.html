@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito De Compra - FASHIONSTYLE</title>
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/Carrito.css">
+
+   
+</head>
+<body>
+
+<header>
+    <img src="../assets/logo.pp.png" alt="Logo" class="logo">
+    <div class="search-container">
+        <input id="int-buscar" type="search" placeholder="Buscar">
+        <button class="btn-buscar">Buscar</button>
+    </div>
+    <div class="auth-buttons">
+        <a href="Login.html" class="btn-login">Iniciar Sesión</a>
+        <a href="index.html" class="btn-register">Inicio</a>
+    </div>
+</header>
+
+<main>
+    <section id="cart-large">
+        <h2>Tu Carrito</h2>
+        <div id="cart-large-items"></div>
+    </section>
+
+    <aside class="cart-summary">
+        <h3>Resumen de la compra</h3>
+        <div style="display:flex;justify-content:space-between;margin:12px 0;"><span>Subtotal</span><span id="cart-subtotal">$0</span></div>
+        <div style="display:flex;justify-content:space-between;margin:12px 0;"><span>IVA (13%)</span><span id="cart-iva">$0</span></div>
+        <div style="display:flex;justify-content:space-between;font-weight:700;font-size:1.1rem;margin:12px 0;"><span>Total</span><span id="cart-total">$0</span></div>
+        <a href="CarritoIngresoDePago.html" class="btn-checkout" style="display:block;text-align:center;margin-top:10px;">Proceder al pago</a>
+        <button id="clear-cart" style="margin-top:10px;width:100%;padding:10px;">Vaciar carrito</button>
+    </aside>
+</main>
+
+<footer>FASHIONSTYLE 2026</footer>
+
+<script src="../JS/cartStorage.js"></script>
+<script src="../JS/CarritoGrande.js"></script>
+<script src="../JS/miniCarrito.js"></script>
+
+</body>
+</html>

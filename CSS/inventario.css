@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+     font-family: 'Montserrat', sans-serif;
+}
+.title{
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:20px;
+    color:#000000;
+    text-shadow:1px 1px 2px rgba(190, 170, 170, 0.5);
+    justify-content: center;
+    align-self: center;
+    text-align:center
+
+}
+
+.back{
+    color:#fff;
+    text-decoration:none;
+    font-size:16px;
+    padding:8px 12px;
+    background:rgba(0,0,0,0.5);
+    border-radius:4px;
+    transition:background 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+
+
+.fondo {
+    min-height: 100vh;
+    background: url("https://img3.wallspic.com/attachments/originals/3/5/4/6453-negro-monocromo-textura-todavia_vida_la_fotografia-monocromo_de_la_fotografia-2560x1600.jpg") no-repeat center/cover;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+.paneles{
+    display:flex;
+    justify-content:center ;
+    align-items:center ;
+    gap:200px;
+    
+    flex-wrap:wrap; 
+    margin-bottom:30px;
+}
+
+.panel{
+    width:270px;
+    background:#e0e0e0;
+    border-radius:6px;
+    box-shadow:0 4px 6px rgba(0,0,0,0.3);
+}
+
+.panel-header{
+    background:#d3d3d3;
+    padding:10px;
+    font-weight:bold;
+}
+
+.panel-body{
+    padding:20px;
+    
+}
+
+.row{
+    display:flex;
+    justify-content:space-between;
+    font-weight:bold;
+    margin-bottom:5px;
+    border-bottom:1px solid #aaa; 
+}
+
+.fila{
+    display:flex;
+    justify-content:space-between;
+    align-items:center; 
+    font-size:14px;
+    margin:4px 0;
+    gap:6px; 
+}
+
+.fila .nombre{
+    flex:1;
+    margin-left:6px;
+}
+
+.cantidad{
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.add{
+    margin-top:8px;
+    color:#000;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.tabla-row input{
+    border:none;
+    background:transparent;
+    width:100%;
+    padding:8px;
+    font-size:14px;
+}
+
+.tabla-row input:focus{
+    outline:1px solid #000;
+    background:#fff;
+}
+
+
+
+h1 {
+    
+    background: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #5fa8ff;
+    margin-bottom: 40px;
+}
+
+
+.menu {
+    
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card {
+    
+    background: white;
+    width: 180px;
+    border: 3px solid black;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    border: 2px solid black;
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.card p {
+    border-top: 3px solid black;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.abajo{
+    margin-top:20px;
+    color:#ffffff;
+    font-weight:bold;
+    cursor:pointer;
+    position: absolute;
+    bottom: 200px;
+    left: 700px;
+     border: solid 1px rgb(255, 255, 255);
+
+}
+
+th {
+padding: 20px 15px;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+td {
+padding: 10px 10px;
+border-bottom: 1px solid #ddd;
+}
+tbody tr {
+cursor: pointer;
+
+}
+tbody tr:hover {
+background: rgb(1, 39, 255);
+
+}
+.hh2 {
+    background: url("https://img3.wallspic.com/attachments/originals/3/5/4/6453-negro-monocromo-textura-todavia_vida_la_fotografia-monocromo_de_la_fotografia-2560x1600.jpg") no-repeat center/cover;
+    min-height: 100vh;
+}
+.container{
+    border: solid 1px rgb(255, 255, 255);
+}
+
+.titulo{
+  text-align:center;
+  background:white;
+  width:fit-content;
+  margin:20px auto;
+  padding:10px 30px;
+  border:2px solid black;
+}
+
+.btn-agregar{
+  position:fixed;
+  top:20px;
+  right:20px;
+  background:white;
+  border:2px solid black;
+  padding:8px 15px;
+  text-decoration:none;
+  color:black;
+  font-weight:bold;
+}
+
+.tienda{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+  gap:20px;
+  padding:20px;
+}
+
+.producto{
+  background:white;
+  border:2px solid black;
+  text-align:center;
+  cursor:pointer;
+  padding:10px;
+}
+
+.producto img{
+  width:100%;
+  height:180px;
+  object-fit:contain;
+}
+
+/* MODAL */
+.modal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.7);
+  display:none;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+.modal-contenido{
+  background:white;
+  padding:20px;
+  width:350px;
+  border-radius:10px;
+  position:relative;
+}
+
+.cerrar{
+  position:absolute;
+  top:10px;
+  right:15px;
+  cursor:pointer;
+}
+
+.acciones{
+  display:flex;
+  justify-content:space-between;
+  margin-top:10px;
+}
+
+.acciones button{
+  padding:6px 12px;
+  cursor:pointer;
+}
+
+/* FORM */
+.formulario{
+  display:flex;
+  background:white;
+  margin:40px;
+  padding:20px;
+  border:2px solid black;
+}
+
+.preview{
+  width:250px;
+  height:250px;
+  border:2px solid black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.preview img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.campos{
+  margin-left:20px;
+  flex:1;
+}
+
+.campos input, textarea{
+  width:100%;
+  margin-bottom:10px;
+}
+
+.modal img{
+  max-width:100%;
+  height:auto;
+}

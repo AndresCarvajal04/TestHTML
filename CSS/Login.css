@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 2px solid black;
+    background: white;
+    height: 80px;
+}
+
+/* Contenedor botón inicio  */
+.header-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* BOTÓN INICIO */
+.btn-inicio {
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-inicio:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Contenedor principal */
+.contenedor {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Tarjeta */
+.Formulario {
+    width: 350px;
+    max-width: 90%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Formulario */
+.Formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Títulos */
+.Formulario h1,
+.Formulario h2,
+.Formulario h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    text-align: left;
+}
+
+/* Inputs */
+.Formulario input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.Formulario input:focus {
+    border-color: #f79da9;
+    box-shadow: 0 0 5px rgba(247, 157, 169, 0.4);
+}
+
+/* Botón ingresar */
+.Formulario button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #f79da9;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Formulario button:hover {
+    transform: scale(1.03);
+}

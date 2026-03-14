@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>ADMIN - FASHIONSTYLE</title>
+<link rel="stylesheet" href="../CSS/Style.css">
+</head>
+<body>
+
+<div id="id1"></div>
+
+<header>
+    <img src="../assets/logo.pp.png" alt="Logo" class="logo">
+
+    <div class="search-container">
+        <input id="int-buscar" type="search" placeholder="Buscar">
+        <button class="btn-buscar">Buscar</button>
+    </div>
+
+    <div class="auth-buttons">
+        <a href="Inventario.html" class="btn-admin">Inventario</a>
+        <a href="tienda.html" class="btn-admin">Tienda</a>
+        <button id="btn-desplegable">☰</button>
+    </div>
+</header>
+
+<main>
+    <h2 class="titulo-seccion">PANEL ADMIN</h2>
+
+    <section class="galeria" id="adminGaleria"></section>
+</main>
+
+<!-- MODAL EDITAR -->
+<div id="producto-detalle" class="modal">
+    <div class="modal-contenido">
+        <h3>Editar producto</h3>
+
+        <input type="hidden" id="edit-id">
+
+        <label>Nombre</label>
+        <input id="edit-nombre">
+
+        <label>Precio</label>
+        <input id="edit-precio">
+
+        <label>Descripción</label>
+        <textarea id="edit-descripcion"></textarea>
+
+        <label>Imagen (ruta)</label>
+        <input id="edit-imagen">
+
+        <div class="modal-botones">
+            <button onclick="guardarEdicion()">Guardar</button>
+            <button onclick="cerrarModal()">Cancelar</button>
+        </div>
+    </div>
+</div>
+
+<script src="../JS/funcionhaciaotro.js"></script>
+</body>
+</html>

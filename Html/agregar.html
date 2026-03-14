@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Agregar Producto</title>
+<link rel="stylesheet" href="../CSS/inventario.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="hh2">
+
+<h1 class="titulo">Zona Agregar Producto</h1>
+<a href="tienda.html" class="btn-agregar">← Volver</a>
+
+<div class="formulario">
+  <div class="preview">
+    <img id="previewImg">
+  </div>
+
+  <div class="campos">
+    <label>Nombre</label>
+    <input id="nombre">
+
+    <label>Precio</label>
+    <input id="precio">
+
+    <label>Talla</label>
+    <input id="talla">
+
+    <label>Color</label>
+    <input id="color">
+
+    <label>Descripción</label>
+    <textarea id="desc"></textarea>
+
+    <label>Imagen</label>
+    <input type="file" id="imagen">
+
+    <button onclick="agregarProducto()">Agregar a la tienda</button>
+  </div>
+</div>
+
+<script src="../JS/funcionPrograma.js"></script>
+</body>
+</html>

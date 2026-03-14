@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
+
+
+/* General */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+h1, h2, h3 {
+   font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 36px;    
+}
+body {
+    background-image: url("https://img.freepik.com/foto-gratis/abstracto-borroso-centro-comercial_1203-8771.jpg");
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+      display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+main {
+    flex: 1;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 2px solid black;
+    background: white;
+    position: relative;
+    height: 80px;
+}
+
+.logo {
+    height: 160px;
+    object-fit: contain;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#int-buscar {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid black;
+    outline: none;
+}
+
+.btn-buscar {
+    background-color: deeppink;
+    color: white;
+    border: 2px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-left: auto;
+}
+
+.btn-login,.btn-register {
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+    border: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: 13px;
+    background-color: white;
+    text-decoration: underline;
+}
+
+.btn-login:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn-register {
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 8px 10px;
+    text-decoration: underline;
+}
+
+.btn-register:hover {
+   background-color: black;
+    color: white;
+}
+
+.btn-carrito, .btn-admin {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: 13px;
+}
+
+.btn-carrito:hover, .btn-admin:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn-carrito img {
+    width: 20px;
+    height: 20px;
+}
+
+#btn-desplegable {
+    font-size: 24px;
+    background: white;
+   border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#btn-desplegable:hover {
+    background-color: black;
+    color: white;
+}
+
+
+.titulo-seccion {
+    text-align: center;
+    margin: 40px 0;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    height: 380px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: white;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.img-box {
+    flex-grow: 1;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 500px; 
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 14%; 
+}
+
+.name {
+    background-color: beige;
+    text-align: center;
+    padding: 15px 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 8px 8px 0px black;
+}
+
+
+footer {
+        text-align: center;
+        padding: 30px;
+        border-top: 2px solid black;
+        background: white;
+}
+footer a { 
+        text-decoration: none;
+        color: black; 
+        font-weight: bold;
+}
+
+
+.product-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 50px auto;
+    border: 3px solid black;
+    background: white;
+    min-height: 500px;
+}
+
+.product-image {
+    width: 45%;
+    border-right: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    width: 55%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-add-cart {
+    background-color: deeppink;
+    color: white;
+    border: 2px solid black;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.btn-add-cart:hover { background-color: #ff1493; }
+
+header > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    background-color: white;
+    transition: all 0.3s ease;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+
+header > a:hover {
+    background-color: deeppink;
+    color: white;
+}
+
+
+.splash-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff0000 0%, #333333 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeIn 2s ease-in;
+}
+
+
+
+.splash-logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 30px;
+    animation: logoPulse 2s infinite, logoFloat 3s ease-in-out infinite;
+}
+
+
+.splash-title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+  
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    letter-spacing: 5px;
+    animation: slideUp 1s ease-out 0.5s both, glow 2s ease-in-out infinite alternate;
+}
+
+
+
+.splash-subtitle {
+    font-size: 1.5rem;
+    color: #ff1493;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    animation: slideUp 1s ease-out 1s both, colorChange 3s ease-in-out infinite;
+}
+
+
+
+.splash-loading {
+    width: 200px;
+    height: 4px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.splash-loading-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #ff1493, deeppink, #ff69b4);
+    border-radius: 2px;
+    animation: loading 4s ease-in-out infinite;
+}
+
+    @keyframes loading {
+        0% { width: 0%; }
+        100% { width: 100%; }
+    }
+
+.splash-button {
+    background: deeppink;
+    color: white;
+    border: 2px solid white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    animation: slideUp 1s ease-out 1.5s both, buttonPulse 2s ease-in-out infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+.splash-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.splash-button:hover::before {
+    left: 100%;
+}
+
+
+
+.splash-button:hover {
+    background: white;
+    color: deeppink;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255,20,147,0.6);
+}
+
+.splash-footer {
+    position: absolute;
+    bottom: 20px;
+    color: rgba(255,255,255,0.7);
+    font-size: 0.9rem;
+    text-align: center;
+    animation: fadeIn 1s ease-in 2s both;
+}
+
+/* Estilos para el detalle del producto */
+#producto-detalle {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 2px solid black;
+    padding: 20px;
+    z-index: 1000;
+    max-width: 400px;
+    text-align: center;
+}
+
+#producto-detalle h3 {
+    margin-top: 0;
+}
+
+#producto-imagen {
+    max-width: 100%;
+    height: auto;
+}
+
+#producto-detalle button {
+    background-color: deeppink;
+    color: white;
+    border: 2px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#producto-detalle button:hover {
+    background-color: #ff1493;
+}

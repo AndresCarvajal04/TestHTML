@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tienda</title>
+<link rel="stylesheet" href="../CSS/TiendaDiseño.css">
+
+<a class="back" href="Admin.html" class="back">← Volver</a>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="hh2">
+  <h1 class="titulo">Tienda</h1>
+    <a href="agregar.html" class="btn-agregar">+ Agregar producto</a>
+    <div class="contenedor-acciones-admin">
+    <button onclick="publicarEnTienda()" class="btn-publicar">
+        Publicar Selección en Tienda
+    </button>
+    </div>
+    <div class="tienda" id="tienda"></div>
+      <div class="modal" id="modal">
+        <div class="modal-contenido">
+          <span class="cerrar" onclick="cerrarModal()">✖</span>
+          <img id="modalImg">
+          <h2 id="modalNombre"></h2>
+          <p id="modalPrecio"></p>
+          <p id="modalTalla"></p>
+          <p id="modalColor"></p>
+          <p id="modalDesc"></p>
+          <input type="file" id="imagen" onchange="previewImage()">
+            <div class="control-stock">
+              <label for="cantidadInput">Cantidad a enviar:</label>
+              <div class="input-group">
+                <input type="number" id="cantidadInput" min="1" value="1" placeholder="0">
+                <button onclick="enviarStock()" class="btn-enviar">Actualizar Stock</button>
+              </div>
+            </div>
+            <div class="acciones">
+              <button onclick="editarProducto()">Editar</button>
+              <button onclick="borrarProducto()">Borrar</button>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  <script src="../JS/funcionPrograma.js"></script>
+</body>
+</html>
